@@ -2,10 +2,10 @@
 
 <head>
 
-
+    {% load static%}
 
     <!-- Bootstrap -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'SistemaWeb/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
      <!-- Fonts -->
     
@@ -14,7 +14,7 @@
      
 
     <!-- Styles -->
-    <link href="/css/gestion.css" rel="stylesheet">
+    <link href="{% static 'SistemaWeb/css/gestion.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -40,9 +40,9 @@
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="servicios.html">Servicios</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <!-- <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="tienda.html">Tienda</a>
-          </li>
+          </li> -->
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="contacto.html">Contacto</a>
           </li>
@@ -60,13 +60,13 @@
    <section class="page-section clearfix">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/img/principal.jpg" alt="">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'SistemaWeb/img/fondo1.png' %}" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4" >
-            <span class="section-heading-upper">Puntualidad</span>
-            <span class="section-heading-lower">El mejor stock</span>
+            <span class="section-heading-upper">Homosexuales</span>
+            <span class="section-heading-lower">me la pelan</span>
           </h2>
-          <p class="mb-3">En la puertra de tu casa en menos de 48 h con el envío normal. En menos de 24 h con el envío express.
+          <p class="mb-3">mecos.
           </p>
          
         </div>
@@ -127,8 +127,8 @@
 	</footer>
 
     <!-- Bootstrap -->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'SistemaWeb/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'SistemaWeb/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
 
