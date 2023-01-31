@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'SistemaWeb',
-    'servicios',
 ]
 
 MIDDLEWARE = [
@@ -56,8 +55,7 @@ ROOT_URLCONF = 'Sistema_medico.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #"C:/Users/Usuario\Documents/proyecto/Sistema_medico/SistemaWeb/Template"
-        'DIRS': [r"C:/Users/Usuario/Documents/GitHub/prueba1/SistemaWeb/Template"],
+        'DIRS': [r"C:/Users/Usuario\Documents/proyecto/Sistema_medico/SistemaWeb/Template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sistemamedico',
         'USER': 'postgres',
-        'PASSWORD': 'salesiana',
+        'PASSWORD': '12345678',
         'HOST':'localhost',
         'DATABASE' : '5432',
 
@@ -111,7 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+
+LANGUAGE_CODE = 'es-ec'
+#LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
