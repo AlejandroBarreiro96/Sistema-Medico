@@ -14,6 +14,3 @@ def blog(request, template ="SistemaWeb/blog.html"):
 
 def contacto(request, tempalte="SistemaWeb/contacto.html"):
      return render(request,tempalte,{} )
-
-def Login(request, tempalte="SistemaWeb/Login.html"):
-     return render(request,tempalte,{} )
