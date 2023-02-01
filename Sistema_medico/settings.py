@@ -56,7 +56,8 @@ ROOT_URLCONF = 'Sistema_medico.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:/Users/Usuario\Documents/proyecto/Sistema_medico/SistemaWeb/Template"],
+        #"C:/Users/Usuario\Documents/proyecto/Sistema_medico/SistemaWeb/Template"
+        'DIRS': [r"C:/Users/Usuario/Documents/GitHub/prueba1/SistemaWeb/Template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sistemamedico',
         'USER': 'postgres',
-        'PASSWORD': '12345678',
+        'PASSWORD': 'salesiana',
         'HOST':'localhost',
         'DATABASE' : '5432',
 
