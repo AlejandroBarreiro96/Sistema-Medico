@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #"C:/Users/Usuario\Documents/proyecto/Sistema_medico/SistemaWeb/Template"
-        'DIRS': [r"C:/Users/Usuario/Documents/GitHub/prueba1/SistemaWeb/Template"],
+        'DIRS': [r"D:/Nueva carpeta (7)/Sistema-Medico/SistemaWeb/Template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sistemamedico',
         'USER': 'postgres',
-        'PASSWORD': 'salesiana',
+        'PASSWORD': '12345678',
         'HOST':'localhost',
         'DATABASE' : '5432',
 
