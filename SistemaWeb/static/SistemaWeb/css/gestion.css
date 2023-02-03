@@ -277,3 +277,17 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+#navbarResponsive  {
+  display: block;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 300;
+  margin-top:.5rem;
+}
+
+center {
+  text-align: center;
+  width: 50%;
+}
+
