@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'SistemaWeb',
+    'servicios',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'Sistema_medico.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:/Users/dylan/OneDrive/Documentos/GitHub/prueba1/SistemaWeb/Template"],
+        'DIRS': [r"C:/Users/dylan/OneDrive/Documentos/GitHub/Sistema-Medico/SistemaWeb/Template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
