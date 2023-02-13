@@ -1,16 +1,16 @@
 from django.shortcuts import render, HttpResponse
 
-def home(request, template = "SistemaWeb/home.html"):
-     return render(request, template, {} )
 
-def servicio(request, template="SistemaWeb/servicios.html"):
-     return render(request, template, {})
+def home(request):
+     return render(request,"SistemaWeb/home.html" )
 
-def blog(request, template ="SistemaWeb/blog.html"):
-     return render(request, template, {})
+def servicio(request):
+     return render(request,"SistemaWeb/servicios.html" )
 
-def contacto(request, tempalte="SistemaWeb/contacto.html"):
-     return render(request,tempalte,{} )
+def blog(request):
+     return render(request,"SistemaWeb/blog.html" )     
 
-def login(request, template="SistemaWeb/login.html"):
-     return render(request,template,{} )
+def login(request):
+     return render(request,"SistemaWeb/login.html" )
+
+

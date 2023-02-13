@@ -1,6 +1,6 @@
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("C:/Users/Usuario/Documents/proyecto/Sistema_medico/SistemaWeb/static/SistemaWeb/img/base.jpg");
+  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("D:/Nueva carpeta (7)/Sistema-Medico/SistemaWeb/static/SistemaWeb/img/base.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -290,4 +290,9 @@ center {
   text-align: center;
   width: 50%;
 }
+
+/* .contenedorFormulario{
+  background-color: rgba(24, 64, 8);
+
+}  */
 
