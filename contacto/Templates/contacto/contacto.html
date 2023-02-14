@@ -1,0 +1,21 @@
+{% extends "SistemaWeb/base.html" %}
+{% load static %}
+{% block content %}
+<di>
+    {% if "valido" in request.GET %}
+    <p>la informacion se agrego corrctamente</p>
+    {% endif %}
+    <form action="" method="POSt" style="text-align:center;">
+        {% csrf_token %}
+        <b style="color:aliceblue ;">
+            AGENDAR CITA MEDICA
+        </b>
+    <table style="margin: 20px auto;">
+        {{formulario.as_table}}
+    </table>
+    <input type="submit" value="Enviar" style="width: 160PX;">
+    </form>
+</di>
+
+
+{% endblock %}  
