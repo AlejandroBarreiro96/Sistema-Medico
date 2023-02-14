@@ -19,35 +19,32 @@
 
 <body>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <h1 class="site-heading text-center text-black d-none d-lg-block">
       
-        <span class="site-heading-lower">Citas Medicas</span>
+        <span class="site-heading-lower">UPS Health</span>
       </h1>
 
 
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Citas Medicas</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">UPS Health</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Inicio</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Home</a>
           </li>
           <li class="nav-item {% if request.path == '/servicios' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}">Servicios</a>
-          </li>
-          <li class="nav-item {% if request.path == '/contacto' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
-          </li>
-          <li class="nav-item {% if request.path == '/blog' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Blog' %}">Blog</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Especialidades' %}">Especialidades</a>
           </li>
           <li class="nav-item {% if request.path == '/login' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Login' %}">Login</a>
+          </li> 
+          <li class="nav-item {% if request.path == '/contacto' %}active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
           </li> 
         </ul>
       </div>
@@ -81,13 +78,7 @@
 	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 	          </span>
 	        </a>
-	    </p>
-        <p class="m-0 mbt">
-        	<a href="sample.html" class="link">Política de privacidad</a> ·
-        	<a href="sample.html" class="link">Aviso legal</a> ·
-        	<a href="sample.html" class="link">Cookies</a>
-		</p>
-        <p class="m-0 mbt1">&copy; Gestión de Pedidos 2020</p>
+        <p class="m-0 mbt1">&copy; Copyright 2023 Gestión de Citas Médicas UPS</p>
       </div>
 	</footer>
 
