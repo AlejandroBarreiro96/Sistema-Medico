@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'SistemaWeb',
     'servicios',
     'contacto',
+    'autenticacion',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +142,5 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'kevalejba@gmail.com'
 EMAIL_HOST_PASSWORD = 'cdzvcsbzqshqugti'
 EMAIL_USE_TLS = True
+
+CRISPY_TEMPLATE_PACK='bootstrap4'
