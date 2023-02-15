@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+from django.contrib.messages import constants as mensajes_de_error
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -38,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'SistemaWeb',
-    'servicios',
     'contacto',
     'autenticacion',
     'crispy_forms',
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'Sistema_medico.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:/Users/dylan/OneDrive/Documentos/GitHub/Sistema-Medico/SistemaWeb/Template"],
+        'DIRS': [r"D:/Nueva carpeta (7)/Sistema-Medico/SistemaWeb/Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'Sistema_medico.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'citas_medicas',
+        'NAME': 'sistemamedico',
         'USER': 'postgres',
-        'PASSWORD': '1720198744',
+        'PASSWORD': '12345678',
         'HOST':'localhost',
         'DATABASE' : '5432',
  
@@ -142,3 +142,12 @@ EMAIL_HOST_PASSWORD = 'cdzvcsbzqshqugti'
 EMAIL_USE_TLS = True
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
+
+MESSAGE_TAGS={
+    mensajes_de_error.DEBUG: 'debug',
+    mensajes_de_error.INFO: 'info',
+    mensajes_de_error.SUCCESS: 'seccess',
+    mensajes_de_error.WARNING: 'warning',
+    mensajes_de_error.ERROR: 'danger',
+    
+}
