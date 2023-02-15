@@ -24,6 +24,19 @@
         <span class="site-heading-lower">UPS Health</span>
       </h1>
 
+      <div style="text-align: right; margin-right: 100px;">
+        {% if user.is_authenticated %}
+        
+        Bienvenido {{ user.username }} &nbsp;&nbsp; <a href="{% url 'cerrar_sesion' %}">CERRAR SESION</a>
+
+        {% else %}
+
+        <a href="{% url 'logonear' %}">Login</a> &nbsp;&nbsp; <a href="{% url 'Autenticacion' %}"> Resgistrate </a>
+
+        {% endif %}
+
+      </div>
+
 
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -40,12 +53,10 @@
           <li class="nav-item {% if request.path == '/servicios' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Especialidades' %}">Especialidades</a>
           </li>
-          <li class="nav-item {% if request.path == '/login' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Login' %}">Login</a>
-          </li> 
           <li class="nav-item {% if request.path == '/contacto' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
-          </li> 
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Agendar Cita</a>
+          </li>
+   
         </ul>
       </div>
     </div>
