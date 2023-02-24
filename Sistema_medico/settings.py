@@ -59,7 +59,7 @@ ROOT_URLCONF = 'Sistema_medico.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"D:/Nueva carpeta (7)/Sistema-Medico/SistemaWeb/Templates"],
+        'DIRS': [r"C:/Users/dylan/OneDrive/Documentos/GitHub/Sistema-Medico/SistemaWeb/Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'Sistema_medico.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sistemamedico',
+        'NAME': 'citas_medicas',
         'USER': 'postgres',
-        'PASSWORD': '12345678',
+        'PASSWORD': '1720198744',
         'HOST':'localhost',
         'DATABASE' : '5432',
  
